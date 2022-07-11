@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_teladefundo"
+    tools:context=".TelaPrincipalActivity" >
+
+    <View
+        android:id="@+id/navTP"
+        android:layout_width="419dp"
+        android:layout_height="125dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+<!--    <View-->
+<!--        android:id="@+id/principalcontent"-->
+<!--        android:layout_width="413dp"-->
+<!--        android:layout_height="634dp"-->
+<!--        android:background="@drawable/ic_teladefundo"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <ImageButton
+        android:id="@+id/menuHamburguer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/menu_nav"
+        app:layout_constraintBottom_toBottomOf="@+id/navTP"
+        app:layout_constraintEnd_toEndOf="@+id/navTP"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="@+id/navTP"
+        app:layout_constraintTop_toTopOf="@+id/navTP"
+        app:layout_constraintVertical_bias="0.534"
+        app:srcCompat="@drawable/menuhamburguer" />
+
+    <ImageView
+        android:id="@+id/logoTP"
+        android:layout_width="185dp"
+        android:layout_height="66dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/navTP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="@+id/navTP"
+        app:layout_constraintTop_toTopOf="@+id/navTP"
+        app:layout_constraintVertical_bias="0.525"
+        app:srcCompat="@drawable/largelogo" />
+
+    <Button
+        android:id="@+id/botaoListarProdutos"
+        android:layout_width="295dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/bellefair"
+        android:text="@string/button_list"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navTP"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <Button
+        android:id="@+id/botaoCadastrarProdutos"
+        android:layout_width="294dp"
+        android:layout_height="82dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/bellefair"
+        android:text="@string/button_add"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navTP"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <Button
+        android:id="@+id/sairApp"
+        android:layout_width="176dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/bellefair"
+        android:text="@string/button_close_app"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navTP"
+        app:layout_constraintVertical_bias="0.902" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

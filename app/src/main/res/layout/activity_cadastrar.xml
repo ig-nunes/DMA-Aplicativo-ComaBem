@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@drawable/ic_teladefundo"
+    tools:context=".CadastrarActivity">
+
+    <View
+        android:id="@+id/navCadastrar"
+        android:layout_width="412dp"
+        android:layout_height="119dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageButton
+        android:id="@+id/botaoVoltarTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/button_return_main_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/botaovoltartelaprincipal" />
+
+    <ImageButton
+        android:id="@+id/botaoEngrenagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/button_gear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/engrenagem" />
+
+<!--    <View-->
+<!--        android:id="@+id/mainContentCadastrar"-->
+<!--        android:layout_width="416dp"-->
+<!--        android:layout_height="611dp"-->
+<!--        android:background="@drawable/ic_teladefundo"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.6"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <View
+        android:id="@+id/backgroundCadastros"
+        android:layout_width="310dp"
+        android:layout_height="509dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navCadastrar" />
+
+    <EditText
+        android:id="@+id/inputNome"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:fontFamily="@font/bellefair"
+        android:hint="@string/input_name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundCadastros"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundCadastros"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/backgroundCadastros"
+        app:layout_constraintTop_toTopOf="@+id/backgroundCadastros"
+        app:layout_constraintVertical_bias="0.079"
+        />
+
+    <TextView
+        android:id="@+id/labelNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellefair"
+        android:text="@string/label_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundCadastros"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundCadastros"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/backgroundCadastros"
+        app:layout_constraintTop_toTopOf="@+id/backgroundCadastros"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <EditText
+        android:id="@+id/inputDescricao"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:fontFamily="@font/bellefair"
+        android:hint="@string/input_description"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundCadastros"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundCadastros"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/backgroundCadastros"
+        app:layout_constraintTop_toTopOf="@+id/backgroundCadastros"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <TextView
+        android:id="@+id/labelDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellefair"
+        android:text="@string/label_description"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundCadastros"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundCadastros"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/backgroundCadastros"
+        app:layout_constraintTop_toTopOf="@+id/backgroundCadastros"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/inputPreco"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:fontFamily="@font/bellefair"
+        android:hint="@string/input_price"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundCadastros"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundCadastros"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/backgroundCadastros"
+        app:layout_constraintTop_toTopOf="@+id/backgroundCadastros"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/labelPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellefair"
+        android:text="@string/label_price"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundCadastros"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundCadastros"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/backgroundCadastros"
+        app:layout_constraintTop_toTopOf="@+id/backgroundCadastros"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <Button
+        android:id="@+id/button_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2C2C2C"
+        android:fontFamily="@font/bellefair"
+        android:text="@string/button_pic"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundCadastros"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundCadastros"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="@+id/backgroundCadastros"
+        app:layout_constraintTop_toTopOf="@+id/backgroundCadastros"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <ImageView
+        android:id="@+id/fotoProduto"
+        android:layout_width="123dp"
+        android:layout_height="129dp"
+        android:contentDescription="@string/imageview_pic"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundCadastros"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundCadastros"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="@+id/backgroundCadastros"
+        app:layout_constraintTop_toTopOf="@+id/backgroundCadastros"
+        app:layout_constraintVertical_bias="0.756"
+        app:srcCompat="@drawable/textview_border" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2C2C2C"
+        android:fontFamily="@font/bellefair"
+        android:text="@string/button_register"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundCadastros"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundCadastros"
+        app:layout_constraintStart_toStartOf="@+id/backgroundCadastros"
+        app:layout_constraintTop_toTopOf="@+id/backgroundCadastros"
+        app:layout_constraintVertical_bias="0.928" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

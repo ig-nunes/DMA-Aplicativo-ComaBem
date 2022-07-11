@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@drawable/ic_teladefundo"
+    tools:context=".ListarActivity">
+
+    <View
+        android:id="@+id/navListar"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/botaoVoltarTPListar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/button_return_main_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        app:srcCompat="@drawable/botaovoltartelaprincipal" />
+
+
+    <ImageButton
+        android:id="@+id/botaoEngrenagemListar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/button_gear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        app:srcCompat="@drawable/engrenagem" />
+
+    <View
+        android:id="@+id/bgTituloListar"
+        android:layout_width="188dp"
+        android:layout_height="70dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/tituloListar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellefair"
+        android:text="Produtos:"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bgTituloListar"
+        app:layout_constraintEnd_toEndOf="@+id/bgTituloListar"
+        app:layout_constraintStart_toStartOf="@+id/bgTituloListar"
+        app:layout_constraintTop_toTopOf="@+id/bgTituloListar" />
+
+
+    <ListView
+        android:id="@+id/listaprodutos"
+        android:layout_width="319dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bgTituloListar"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <!--    Conteúdo retirado por limitações: -->
+
+    <!--    <View-->
+<!--        android:id="@+id/bgProduto1"-->
+<!--        android:layout_width="380dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:background="#000000"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.516"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.631" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/indice1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="1 -"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintHorizontal_bias="0.081"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintVertical_bias="0.516" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/produtoExemplo1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintHorizontal_bias="0.27"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintVertical_bias="0.433"-->
+<!--        app:srcCompat="@drawable/produtoexemplocarne" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nome1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="Carne"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintHorizontal_bias="0.585"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintVertical_bias="0.516" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/preco1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="R$ 30,00"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintHorizontal_bias="0.954"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgProduto1"-->
+<!--        app:layout_constraintVertical_bias="0.516" />-->
+
+
+<!--    <View-->
+<!--        android:id="@+id/bgProduto2"-->
+<!--        android:layout_width="380dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:background="#000000"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.516"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.888" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/indice2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="2 -"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintHorizontal_bias="0.081"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintVertical_bias="0.516" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/produtoExemplo2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintHorizontal_bias="0.27"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgProduto2"-->
+<!--        app:srcCompat="@drawable/produtoexemploleite" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nome2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="Leite"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintHorizontal_bias="0.565"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintVertical_bias="0.516" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/preco2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="R$ 30,00"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintHorizontal_bias="0.954"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgProduto2"-->
+<!--        app:layout_constraintVertical_bias="0.516" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/bgUnidades"-->
+<!--        android:layout_width="380dp"-->
+<!--        android:layout_height="89dp"-->
+<!--        android:background="#000000"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.516"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.409" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/unidadeIndice"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="Indice"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintHorizontal_bias="0.063"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintVertical_bias="0.528" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/unidadeFoto"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="Foto"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintHorizontal_bias="0.321"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintVertical_bias="0.538" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/unidadeNome"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="Nome"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintHorizontal_bias="0.596"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintVertical_bias="0.553" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/unidadePreco"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bellefair"-->
+<!--        android:text="Preço"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintHorizontal_bias="0.881"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bgUnidades"-->
+<!--        app:layout_constraintVertical_bias="0.553" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

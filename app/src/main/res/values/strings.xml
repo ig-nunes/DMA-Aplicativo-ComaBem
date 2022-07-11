@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ComaBem</string>
+    <string name="logo">Logo do aplicativo Coma Bem</string>
+    <string name="menu_nav">Menu de navegação no estilo "hambúrguer"</string>
+    <string name="button_list">Listar Produtos</string>
+    <string name="button_add">Cadastrar Produto</string>
+    <string name="button_close_app">Sair</string>
+    <string name="button_gear">Engrenagem</string>
+    <string name="button_return_main_screen">Voltar para tela principal</string>
+    <string name="input_name">Digite o Nome do Produto</string>
+    <string name="label_name">Nome do Produto</string>
+    <string name="input_description">Digite a Descrição do Produto</string>
+    <string name="label_description">Descrição do Produto</string>
+    <string name="input_price">Digite o Preço do produto</string>
+    <string name="label_price">Preço do Produto</string>
+    <string name="button_pic">Tirar Foto</string>
+    <string name="button_register">Cadastrar</string>
+    <string name="imageview_pic">Local da Foto</string>
+
+</resources>
